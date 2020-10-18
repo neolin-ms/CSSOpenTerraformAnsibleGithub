@@ -89,6 +89,13 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_7.png "1_7")<br>
+5. Run the terraform apply command to apply your configuration.
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform apply
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_8.png "1_8")<br>
 
 
 ## Lab2 - Ansible
