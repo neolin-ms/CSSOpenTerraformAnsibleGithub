@@ -48,7 +48,7 @@
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_5.png "1_5")<br>
 2. Paste the following Terraform configuration into a file and name it `main.tf`.
 > ```bash 
-> neolin@tw-hslin-207a:~/terraform-docker-demo$ vi main.tf
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ vi main.tf
 > ```
 > The file contents:
 > ```bash
@@ -75,6 +75,13 @@
 >   location = "westus2"
 > }
 > ```
+3. Initialize your learn-terraform-azure directory in your terminal. 
+> Command:
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform init
+> ``` 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_6.png "1_6")<br>
 
 ## Lab2 - Ansible
 
