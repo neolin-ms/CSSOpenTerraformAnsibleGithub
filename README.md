@@ -148,19 +148,28 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_16.png "1_16")<br>
-
 13. Then SSH to your VM, and verify the Ubuntu Linux version.
-> Command1:
+> Command1:<br>
 > ```bash
 > neolin@tw-hslin-207a:~/learn-terraform-azure$ ssh azureuser@{PUBLIC IP ADDRESS}
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_17.png "1_17")<br>
-> Command2:
+> Command2:<br>
 > ```
 > azureuser@myTFvm:~$ cat /etc/*release 
 > ```
+> Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_18.png "1_18")<br>
+14. Use terraform destroy to remove infrastructure from your Azure cloud account. When prompted, type `yes` to execute this plan and destroy the infrastructure.
+> Command:
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform destroy
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_19.png "1_19")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_20.png "1_20")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_21.png "1_21")<br>
 
 ## Lab2 - Ansible
 
