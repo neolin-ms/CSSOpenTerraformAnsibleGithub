@@ -96,13 +96,28 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_8.png "1_8")<br>
-6. Validate the resource group by AzureCLI.
+6. Validate the resource group by AzureCLI command.
 > Command:<br>
 > ```bash
->
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ az group list --output table
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_9.png "1_9")<br>
+7. Inspect the current state using `terraform show`.
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform show 
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_10.png "1_10")<br>
+8. Create a Linux VM with infrastructure in Azure using Terraform. Complete Terraform script.
+> 8.1 Create Azure connection and resource group
+> 8.2 Create virtual network
+> 8.3 Create public IP address
+> 8.4 Create Network Security Group 
+> 8.5 Create virtual network interface card
+> 8.6 Create storage account for diagnostics
+> 8.7 Create virtual machine
 
 
 ## Lab2 - Ansible
@@ -112,3 +127,4 @@
 ## References
 
 1. [Get Started - Azure - Install Terrafrom](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started)
+2. [Create a Linux VM with infrastructure in Azure using Terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure) 
