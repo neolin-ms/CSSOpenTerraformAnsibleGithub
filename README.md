@@ -76,12 +76,20 @@
 > }
 > ```
 3. Initialize your learn-terraform-azure directory in your terminal. 
-> Command:
+> Command:<br>
 > ```bash
 > neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform init
 > ``` 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_6.png "1_6")<br>
+4. Before you can create infrastructure, Terraform needs to generate an execution plan. Run the `terraform plan` command to view the execution plan for your configuration.
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform plan
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_7.png "1_7")<br>
+
 
 ## Lab2 - Ansible
 
