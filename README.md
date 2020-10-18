@@ -16,11 +16,16 @@
 > ```bash
 > neolin@tw-hslin-207a:~$ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" 
 > ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_2.png "1_2")<br> 
 3. Update and install.
 > Command:
 > ```bash
 > neolin@tw-hslin-207a:~$ sudo apt-get update && sudo apt-get install terraform
 > ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_3.png "1_3")<br> 
+
 
 **Create a Virtual Machine on Azure by Terrafrom**
 
