@@ -39,14 +39,14 @@
 > ``` 
 
 **Create a Virtual Machine on Azure by Terrafrom**
-1. Creae a directory named `terraform-docker-demo`.
+1. Creae a directory named `learn-terraform-azure`.
 > Command:<br> 
 > ```bash
->  neolin@tw-hslin-207a:~$ mkdir terraform-docker-demo && cd $_
+>  neolin@tw-hslin-207a:~$ mkdir learn-terraform-azure && cd $_
 > ``` 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_5.png "1_5")<br>
-2. 3. Paste the following Terraform configuration into a file and name it `main.tf`.
+2. Paste the following Terraform configuration into a file and name it `main.tf`.
 > ```bash 
 > neolin@tw-hslin-207a:~/terraform-docker-demo$ vi main.tf
 > ```
@@ -60,6 +60,10 @@
 >       version = ">= 2.26"
 >     }
 >   }
+> }
+>
+> provider "azurerm" {
+>   features {}
 > }
 >
 > provider "azurerm" {
