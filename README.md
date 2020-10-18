@@ -118,7 +118,21 @@
 > 8.5 Create virtual network interface card<br>
 > 8.6 Create storage account for diagnostics<br>
 > 8.7 Create virtual machine<br>
-9.
+9. Ensures that Terraform has all the prerequisites to build your template in Azure
+> Command:
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform init
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_11.png "1_11")<br>
+10. Compares the requested resources to the state information saved by Terraform and then outputs the planned execution.
+> Command:
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform plan
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_12.png "1_12")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_13.png "1_13")<br>
 
 
 ## Lab2 - Ansible
