@@ -37,9 +37,47 @@
 
 1. On last session, we have a lab for install Docker Desktop on [WSL2](https://github.com/neolin-ms/CSSOpenAzureCLIDocker). Confirm the Docker status on Windows 10. 
 > Steps:<br> 
+> ```bash
 > Windows desktop > status bar > the hidden icons > Docker Desktop is Running<br>
+> ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_5.png "1_5")<br> 
+2. Creae a directory named `terraform-docker-demo`.
+> ```bash
+>  mkdir terraform-docker-demo && cd $_
+> ``` 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_6.png "1_6")<br> 
+3. Paste the following Terraform configuration into a file and name it `main.tf`.
+> ```bash
+> vi main.tf
+>  terraform {
+>   required_providers {
+>     docker = {
+>       source = "terraform-providers/docker"
+>     }
+>   }
+> }
+>
+> provider "docker" {
+>   host    = "npipe:////.//pipe//docker_engine"
+> }
+>
+> resource "docker_image" "nginx" {
+>   name         = "nginx:latest"
+>   keep_locally = false
+> }
+>
+> resource "docker_container" "nginx" {
+>   image = docker_image.nginx.latest
+>   name  = "tutorial"
+>   ports {
+>     internal = 80
+>     external = 8000
+>   }
+> }
+
+> ```
 
 **Create a Virtual Machine on Azure by Terrafrom**
 
