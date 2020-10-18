@@ -93,6 +93,14 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_7.png "1_7")<br> 
+5. Before provision the NGINX server container, please check the all container status on WSL2. 
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-207a:~/terraform-docker-demo$ docker ps -a 
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_8.png "1_8")<br> 
+ 
 
 **Create a Virtual Machine on Azure by Terrafrom**
 
