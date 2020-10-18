@@ -60,7 +60,7 @@
 > ```
 > The file contents:
 > ```bash 
->  terraform {
+> terraform {
 >   required_providers {
 >     docker = {
 >       source = "terraform-providers/docker"
@@ -88,7 +88,11 @@
 > ```
 4. Intialize the project, which downloads a plugin that allows Terraform to interact with Docker.
 > Command:<br>
-
+> ```bash
+> neolin@tw-hslin-207a:~/terraform-docker-demo$ terraform init
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_7.png "1_7")<br> 
 
 **Create a Virtual Machine on Azure by Terrafrom**
 
