@@ -96,6 +96,13 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_8.png "1_8")<br>
+6. Validate the resource group by AzureCLI.
+> Command:<br>
+> ```bash
+>
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_9.png "1_9")<br>
 
 
 ## Lab2 - Ansible
