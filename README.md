@@ -25,7 +25,13 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_3.png "1_3")<br> 
-
+4. Verify that the installation worked by opening a new terminal session and listing Terraform's available subcommands.
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-207a:~$  terraform -help
+> ``` 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_4.png "1_4")<br> 
 
 **Create a Virtual Machine on Azure by Terrafrom**
 
