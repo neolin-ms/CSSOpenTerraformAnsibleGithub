@@ -32,6 +32,11 @@
 > ``` 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_4.png "1_4")<br> 
+5. Enable tab completion for Terraform commands, and then restart your shell. 
+> Command:
+> ```bash
+> neolin@tw-hslin-207a:~$ terraform -install-autocomplete
+> ``` 
 
 **Quick start tutorial - Provision an NGINX server using Docker on WSL2**
 
@@ -43,8 +48,9 @@
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_5.png "1_5")<br> 
 2. Creae a directory named `terraform-docker-demo`.
+> Command:<br> 
 > ```bash
->  mkdir terraform-docker-demo && cd $_
+>  neolin@tw-hslin-207a:~$ mkdir terraform-docker-demo && cd $_
 > ``` 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_6.png "1_6")<br> 
@@ -76,8 +82,10 @@
 >     external = 8000
 >   }
 > }
-
 > ```
+4. Intialize the project, which downloads a plugin that allows Terraform to interact with Docker.
+> Command:<br>
+
 
 **Create a Virtual Machine on Azure by Terrafrom**
 
