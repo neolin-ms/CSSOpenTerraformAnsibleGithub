@@ -110,7 +110,7 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_10.png "1_10")<br>
-8. Create a Linux VM with infrastructure in Azure using Terraform. Complete Terraform script.
+8. Create a Linux VM with infrastructure in Azure using Terraform. Complete Terraform script, please refer [here](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/tf_main_example).
 > 8.1 Create Azure connection and resource group<br>
 > 8.2 Create virtual network<br>
 > 8.3 Create public IP address<br>
