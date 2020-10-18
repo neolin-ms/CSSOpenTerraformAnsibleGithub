@@ -144,7 +144,7 @@
 12. The public IP address of your VM with az vm show.  
 > Command:
 > ```bash
->
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ az vm show --resource-group myTFResourceGroup --name myVM -d --query [publicIps] -o tsv
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_16.png "1_16")<br>
