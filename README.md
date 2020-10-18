@@ -33,6 +33,14 @@
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_4.png "1_4")<br> 
 
+**Quick start tutorial - Provision an NGINX server using Docker on WSL2**
+
+1. On last session, we have a lab for install Docker Desktop on [WSL2](https://github.com/neolin-ms/CSSOpenAzureCLIDocker). Confirm the Docker status on Windows 10. 
+> Steps:<br> 
+> Windows desktop > status bar > the hidden icons > Docker Desktop is Running<br>
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_5.png "1_5")<br> 
+
 **Create a Virtual Machine on Azure by Terrafrom**
 
 ## Lab2 - Ansible
@@ -41,4 +49,4 @@
 
 ## References
 
-- [Get Started - Azure - Install Terrafrom](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started)
+1. [Get Started - Azure - Install Terrafrom](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started)
