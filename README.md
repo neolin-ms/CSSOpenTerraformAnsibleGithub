@@ -119,21 +119,48 @@
 > 8.6 Create storage account for diagnostics<br>
 > 8.7 Create virtual machine<br>
 9. Ensures that Terraform has all the prerequisites to build your template in Azure
-> Command:
+> Command:<br>
 > ```bash
 > neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform init
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_11.png "1_11")<br>
 10. Compares the requested resources to the state information saved by Terraform and then outputs the planned execution.
-> Command:
+> Command:<br>
 > ```bash
 > neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform plan
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_12.png "1_12")<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_13.png "1_13")<br>
+11. Apply the template in Terraform.
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ terraform apply
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_14.png "1_14")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_15.png "1_15")<br>
+12. The public IP address of your VM with az vm show.  
+> Command:
+> ```bash
+>
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_16.png "1_16")<br>
 
+13. Then SSH to your VM, and verify the Ubuntu Linux version.
+> Command1:
+> ```bash
+> neolin@tw-hslin-207a:~/learn-terraform-azure$ ssh azureuser@{PUBLIC IP ADDRESS}
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_17.png "1_17")<br>
+> Command2:
+> ```
+> azureuser@myTFvm:~$ cat /etc/*release 
+> ```
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_18.png "1_18")<br>
 
 ## Lab2 - Ansible
 
