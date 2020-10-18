@@ -56,7 +56,10 @@
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/1_6.png "1_6")<br> 
 3. Paste the following Terraform configuration into a file and name it `main.tf`.
 > ```bash
-> vi main.tf
+> neolin@tw-hslin-207a:~$ vi main.tf
+> ```
+> The file contents:
+> ```bash 
 >  terraform {
 >   required_providers {
 >     docker = {
