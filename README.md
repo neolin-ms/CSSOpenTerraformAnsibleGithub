@@ -7,3 +7,5 @@
 ## Lab3 - Git/Github
 
 ## References
+
+- [Get Started - Azure - Install Terrafrom](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started)
