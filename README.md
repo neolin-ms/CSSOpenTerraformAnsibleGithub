@@ -236,7 +236,49 @@ or
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_5.png "2_5")<br>
+3. Create Ansible credentials file
+> Command:<br>
+> ```bash
+> $ cd ~/.azure
+> $ vi credentials 
+4. Insert the following lines into the file. Replace the placeholders with the service principal values.
+> ```bash
+> [default]
+> subscription_id=<your-subscription_id>
+> client_id=<security-principal-appid>
+> secret=<security-principal-password>
+> tenant=<security-principal-tenant>
+> ```
+> Save and close the file.
+5. Define Ansible environment variables.
+> Command:<br>
+> ```bash
+> $ export AZURE_SUBSCRIPTION_ID=<your-subscription_id>
+> $ export AZURE_CLIENT_ID=<security-principal-appid>
+> $ export AZURE_SECRET=<security-principal-password>
+> $ export AZURE_TENANT=<security-principal-tenant>
+> ```
 
+**Test Ansible installation**
+1. Create an Azure resource group. Save the following code as `create_rg.yml`. 
+> Command:
+> ```bash
+> $ vi create_rg.yml
+> ``` 
+> YAML
+> ```yaml
+> ---
+> - hosts: localhost
+>   connection: local
+>   tasks:
+>     - name: Creating resource group - "{{ name }}"
+>       azure_rm_resourcegroup:
+>         name: "{{ name }}"
+>         location: "{{ location }}"
+>       register: rg
+>     - debug:
+>         var: rg
+> ```
 
 ## Lab3 - Git/Github
 
@@ -246,3 +288,4 @@ or
 2. [Create a Linux VM with infrastructure in Azure using Terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure) 
 3. [Installing Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 4. [Manage Linux virtual machines in Azure using Ansible](https://docs.microsoft.com/en-us/azure/developer/ansible/vm-managei)
+5. [Create a service principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#create-a-service-principal)
