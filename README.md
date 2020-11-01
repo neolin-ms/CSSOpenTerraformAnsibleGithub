@@ -347,6 +347,7 @@ or
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_11.png "2_11")<br>
 
 **Manage Linux virtual machines - Start a virtual machine**
+
 1. Create a file named `azure-vm-start.yml`, and open it in the editor.
 > Command:<br>
 > ```bash
@@ -363,6 +364,15 @@ or
 >         resource_group: {{ resource_group_name }}
 >         name: {{ vm_name }}
 > ```
+> Save the file and exit the editor.
+2. Run the playbook using ansible-playbook.
+> Command:<br>
+> ```bash
+> $ ansible-playbook azure-vm-start.yml --extra-vars "resource_group_name=<resource_group_name> vm_name=<vm_name>"
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_12.png "2_12")<br>
+
 
 ## Lab3 - Git/Github
 
