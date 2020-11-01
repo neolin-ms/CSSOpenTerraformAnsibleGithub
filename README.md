@@ -213,6 +213,16 @@
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_3.png "2_3")<br>
+3. Install the pip, setuptools, packaging, msrestazure, and ansible[azure]. 
+> Command:<br>
+> ```bash
+> $ wget https://bootstrap.pypa.io/get-pip.py
+> $ sudo python get-pip.py
+> $ pip install setuptools					 
+> $ pip install packaging
+> $ pip install msrestazure
+> $ pip install ansible[azure]
+> ```
 
 **Create an Azure service principal with Azure CLI**
 1. Enter the following command by replacing ServicePrincipalName with your desired value. It will give you a JSON output as shown in the image. Copy the output to notepad. This details required in your next tasks.
@@ -279,6 +289,21 @@ or
 >     - debug:
 >         var: rg
 > ```
+2. Run the playbook using ansible-playbook. Replace the placeholders with the name and location of the resource group to be created.
+> Command:<br>
+> ```bash
+> $ ansible-playbook create_rg.yml --extra-vars "name=<resource_group_name> location=<resource_group_location>"
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_6.png "2_6")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_7.png "2_7")<br>
+3. Check the resource group by command.
+> Command:<br>
+> ```bash
+> $ az  group list --output table
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_8.png "2_8")<br>
 
 ## Lab3 - Git/Github
 
