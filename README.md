@@ -400,7 +400,7 @@ or
 >         var: rg
 > ```
 > Save the file and exit the editor.
-2. Run the playbook using the ansible-playbook command.
+2. Run the playbook using the ansible-playbook command. Replace the placeholder with the name of the resource group to be deleted, e.g. `myAnsibleRG`.
 > Command:<br>
 > ```bash
 > $ ansible-playbook delete_rg.yml --extra-vars "name=<resource_group>"
