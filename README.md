@@ -214,6 +214,29 @@
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_3.png "2_3")<br>
 
+**Create an Azure service principal with Azure CLI**
+1. Enter the following command by replacing ServicePrincipalName with your desired value. It will give you a JSON output as shown in the image. Copy the output to notepad. This details required in your next tasks.
+> Command:<br>
+> ```bash
+> $ az ad sp create-for-rbac --name ansibleservice
+> ```
+
+or
+
+> Command:<br>
+> ```bash
+> $ az ad sp create-for-rbac --output json 
+> ``` 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_4.png "2_4")<br>
+2. Enter the following command to get Azure SubscriptionID and copy the same to notepad.
+> Command:<br>
+> ```bash
+> $ az account show 
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_5.png "2_5")<br>
+
 
 ## Lab3 - Git/Github
 
