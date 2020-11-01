@@ -180,6 +180,9 @@
 
 **Installing Ansible on Debian**
 1. Add the following line to /etc/apt/sources.list:
+> ```bash
+> deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+> ``` 
 > Command:<br>
 > ```bash
 > neolin@tw-hslin-270a:~$ vi /etc/apt/sources.list 
@@ -191,7 +194,7 @@
 >      6 # deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
 >      7 deb [arch=amd64] https://apt.releases.hashicorp.com buster main
 >      8 # deb-src [arch=amd64] https://apt.releases.hashicorp.com buster main
->      9 deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main 
+>    **9 deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main** 
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_1.png "2_1")<br>
