@@ -305,6 +305,30 @@ or
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_8.png "2_8")<br>
 
+**Manage Linux virtual machines - Stop a virtual machine**
+1. Create a file named `azure-vm-stop.yml`, and open it in the editor.
+> Command:<br>
+> ```bash
+> $ vi azure-vm-stop.yml
+> ```
+> YAML
+> - name: Stop Azure VM
+>   hosts: localhost
+>   connection: local
+>   tasks:
+>     - name: Stop virtual machine
+>       azure_rm_virtualmachine:
+>         resource_group: {{ resource_group_name }}
+>         name: {{ vm_name }}
+>         allocated: no```yaml
+> ```
+> Save the file and exit the edior.
+2. Run the playbook using ansible-playbook.
+> Command:<br>
+> ```bash
+> $ ansible-playbook azure-vm-stop.yml --extra-vars "resource_group_name=<resource_group_name> vm_name=<vm_name>"
+> ```
+
 ## Lab3 - Git/Github
 
 ## References
