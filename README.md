@@ -1,5 +1,10 @@
 # CSSOpen - Session 4 - Lab1&2&3: Terraform, Ansible, Github
 
+**Prerequisites**
+
+- Azure subscription: If you don't an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin. 
+- [Authenticate via Microsoft account](https://docs.microsoft.com/en-us/azure/developer/terraform/get-started-cloud-shell), then [set the current Azure subscription](https://docs.microsoft.com/en-us/azure/developer/terraform/get-started-cloud-shell#set-the-current-azure-subscription).
+
 ## Lab1 - Terraform
 
 **Install Terraform on Debian**
