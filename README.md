@@ -309,7 +309,7 @@ or
 1. Check the VM status via Azure CLI.
 > Command:<br>
 > ```bash
-> $ az vm list -d --query "[?powerState=='VM running']" -o table
+> $ az vm show -g MYTFRESOURCEGROUP -n myVM -d --query powerState -o table 
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_9.png "2_9")<br>
@@ -319,14 +319,15 @@ or
 > $ vi azure-vm-stop.yml
 > ```
 > YAML
+> ```yaml
 > - name: Stop Azure VM
 >   hosts: localhost
 >   connection: local
 >   tasks:
 >     - name: Stop virtual machine
 >       azure_rm_virtualmachine:
->         resource_group: {{ resource_group_name }}
->         name: {{ vm_name }}
+>         resource_group: "{{ resource_group_name }}"
+>         name: "{{ vm_name }}"
 >         allocated: no```yaml
 > ```
 > Save the file and exit the edior.
@@ -334,6 +335,33 @@ or
 > Command:<br>
 > ```bash
 > $ ansible-playbook azure-vm-stop.yml --extra-vars "resource_group_name=<resource_group_name> vm_name=<vm_name>"
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_10.png "2_10")<br>
+4. Check the VM status via Azure CLI.
+> Command:<br>
+> ```bash
+> $ az vm show -g MYTFRESOURCEGROUP -n myVM -d --query powerState -o table 
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_11.png "2_11")<br>
+
+**Manage Linux virtual machines - Start a virtual machine**
+1. Create a file named `azure-vm-start.yml`, and open it in the editor.
+> Command:<br>
+> ```bash
+> $ vi azure-vm-start.yml
+> ```
+> YAML
+> ```yaml
+> - name: Start Azure VM
+>   hosts: localhost
+>   connection: local
+>   tasks:
+>     - name: Start virtual machine
+>       azure_rm_virtualmachine:
+>         resource_group: {{ resource_group_name }}
+>         name: {{ vm_name }}
 > ```
 
 ## Lab3 - Git/Github
