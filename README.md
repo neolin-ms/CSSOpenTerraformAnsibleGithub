@@ -204,15 +204,15 @@
 > $ sudo apt install ansible
 > ```
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_1.png "2_1")<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_2.png "2_2")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_1.png "2_1")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_2.png "2_2")<br>
 3. Run the below command to verify the ansible version.
 > Command:
 > ```bash
 > $ sudo ansible --verion
 > ```
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_3.png "2_3")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_3.png "2_3")<br>
 
 
 ## Lab3 - Git/Github
