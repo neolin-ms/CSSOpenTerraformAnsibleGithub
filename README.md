@@ -178,6 +178,25 @@
 
 ## Lab2 - Ansible
 
+**Installing Ansible on Debian**
+1. Add the following line to /etc/apt/sources.list:
+> Command:<br>
+> ```bash
+> neolin@tw-hslin-270a:~$ vi /etc/apt/sources.list 
+>      1 deb http://deb.debian.org/debian buster main
+>      2 deb http://deb.debian.org/debian buster-updates main
+>      3 deb http://security.debian.org/debian-security/ buster/updates main
+>      4 deb http://ftp.debian.org/debian buster-backports main
+>      5 deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+>      6 # deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
+>      7 deb [arch=amd64] https://apt.releases.hashicorp.com buster main
+>      8 # deb-src [arch=amd64] https://apt.releases.hashicorp.com buster main
+>      9 deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main 
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_1.png "2_1")<br>
+
+
 ## Lab3 - Git/Github
 
 ## References
