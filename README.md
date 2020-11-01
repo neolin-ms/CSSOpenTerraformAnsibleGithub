@@ -380,6 +380,35 @@ or
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_13.png "2_13")<br>
 
+**Delete an Azure resource group**
+1. Create a file named azure-vm-start.yml, and open it in the editor.
+> Command:<br>
+> ```bash
+> $ vi delete_rg.yml
+> ```
+> YAML
+> ```yaml
+> ---
+> - hosts: localhost
+>   tasks:
+>     - name: Deleting resource group - "{{ name }}"
+>       azure_rm_resourcegroup:
+>         name: "{{ name }}"
+>         state: absent
+>       register: rg
+>     - debug:
+>         var: rg
+> ```
+> Save the file and exit the editor.
+2. Run the playbook using the ansible-playbook command.
+> Command:<br>
+> ```bash
+> $ ansible-playbook delete_rg.yml --extra-vars "name=<resource_group>"
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_14.png "2_14")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_15.png "2_15")<br>
+
 ## Lab3 - Git/Github
 
 ## References
