@@ -372,7 +372,13 @@ or
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_12.png "2_12")<br>
-
+3. Check the VM status via Azure CLI.
+> Command:<br>
+> ```bash
+> $ az vm show -g MYTFRESOURCEGROUP -n myVM -d --query powerState -o table
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_13.png "2_13")<br>
 
 ## Lab3 - Git/Github
 
