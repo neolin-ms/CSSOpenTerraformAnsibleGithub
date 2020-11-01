@@ -408,7 +408,7 @@ or
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_14.png "2_14")<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/2_15.png "2_15")<br>
-3. Check the Resource Group via Azure CLI.
+3. Check the Resource Group via Azure CLI. The resource group `myAnsibleRG` will be deleted.
 > Command:<br>
 > ```bash
 > $ az group list -o table
