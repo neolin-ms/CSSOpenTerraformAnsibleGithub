@@ -185,7 +185,7 @@
 > ``` 
 > Command:<br>
 > ```bash
-> neolin@tw-hslin-270a:~$ vi /etc/apt/sources.list 
+> $ sudo vi /etc/apt/sources.list 
 >      1 deb http://deb.debian.org/debian buster main
 >      2 deb http://deb.debian.org/debian buster-updates main
 >      3 deb http://security.debian.org/debian-security/ buster/updates main
@@ -194,10 +194,25 @@
 >      6 # deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
 >      7 deb [arch=amd64] https://apt.releases.hashicorp.com buster main
 >      8 # deb-src [arch=amd64] https://apt.releases.hashicorp.com buster main
->    **9 deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main** 
+>      9 deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main 
+> ```
+2. Then run these commands:
+> Command:
+> ```bash
+> $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+> $ sudo apt update 
+> $ sudo apt install ansible
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_1.png "2_1")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_2.png "2_2")<br>
+3. Run the below command to verify the ansible version.
+> Command:
+> ```bash
+> $ sudo ansible --verion
+> ```
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/TerraformImages/2_3.png "2_3")<br>
 
 
 ## Lab3 - Git/Github
@@ -206,3 +221,5 @@
 
 1. [Get Started - Azure - Install Terrafrom](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started)
 2. [Create a Linux VM with infrastructure in Azure using Terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure) 
+3. [Installing Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+4. [Manage Linux virtual machines in Azure using Ansible](https://docs.microsoft.com/en-us/azure/developer/ansible/vm-managei)
