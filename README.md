@@ -421,19 +421,19 @@ or
 **Access to Github.com from laptop**
 1. Register a account on [Github.com](https://github.com/).
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_1.png "3_1")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_1.png "3_1")<br>
 2. After login to Github.com, please go to the upper right corner of the web screen. Then click the `Settings`. 
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_2.png "3_2")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_2.png "3_2")<br>
 3. Click the `SSH and GPG keys`. 
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_3.png "3_3")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_3.png "3_3")<br>
 4. Click `New SSH key`.
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_4.png "3_4")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_4.png "3_4")<br>
 5. Enter name to the `Title`. Then copy your SSH public key, and past the contents to the `Key`. 
 > Output:<br>
-> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_5.png "3_5")<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_5.png "3_5")<br>
 
 ## References
 
