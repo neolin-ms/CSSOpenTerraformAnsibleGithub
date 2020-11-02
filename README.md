@@ -418,6 +418,23 @@ or
 
 ## Lab3 - Git/Github
 
+**Access to Github.com from laptop**
+1. Register a account on [Github.com](https://github.com/).
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_1.png "3_1")<br>
+2. After login to Github.com, please go to the upper right corner of the web screen. Then click the `Settings`. 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_2.png "3_2")<br>
+3. Click the `SSH and GPG keys`. 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_3.png "3_3")<br>
+4. Click `New SSH key`.
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_4.png "3_4")<br>
+5. Enter name to the `Title`. Then copy your SSH public key, and past the contents to the `Key`. 
+> Output:<br>
+> ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/AnsibleImages/3_5.png "3_5")<br>
+
 ## References
 
 1. [Get Started - Azure - Install Terrafrom](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started)
@@ -425,3 +442,5 @@ or
 3. [Installing Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 4. [Manage Linux virtual machines in Azure using Ansible](https://docs.microsoft.com/en-us/azure/developer/ansible/vm-managei)
 5. [Create a service principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#create-a-service-principal)
+6. [Github.com](https://github.com/)
+7. GitHub Docs - [Generating a new GPG key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-gpg-key).
