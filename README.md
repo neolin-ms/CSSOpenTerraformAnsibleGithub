@@ -475,7 +475,7 @@ or
 > $ git push -u origin main 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_11.png "3_11")<br>
-8. Reture the webpage, reload the webpage. You already sync a file `README.md` from local to Github repo. 
+8. Return the previous webpage, then reload the webpage. You already synchronized a file `README.md` from local to Github repo. 
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_12.png "3_12")<br>
 
 ## References
