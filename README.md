@@ -437,16 +437,13 @@ or
 
 ** Create a repository on Github, and sync file from local to Github repo**
 1. Create a repository on Github. Click the `Your repositories`.
-> Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_6.png "3_6")<br>
 2. Click `New`. 
-> Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_7.png "3_7")<br>
 3. Enter name on Repository name, e.g. Lab3TestGithub. Then click `Create repository`. 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_8.png "3_8")<br>
 4. Get a new repositry and the SSH link. Please copy the SSH link and don't close this webpage.
-> Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_9.png "3_9")<br>
 5. Install Git on Debian 10.
 > Command:<br>
@@ -479,7 +476,6 @@ or
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_11.png "3_11")<br>
 8. Reture the webpage, reload the webpage. You already sync a file `README.md` from local to Github repo. 
-> Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_12.png "3_12")<br>
 
 ## References
