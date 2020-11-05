@@ -461,9 +461,10 @@ or
 > ```
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_10.png "3_10")<br>
-7. Create a folder, and initial repository by commmand `git init`.  
+7. Create a folder and file, then initial repository and sync file to it.  
 > Command:<br>
 > ```bash
+> $ cd
 > $ mkdir Lab3TestGithub
 > $ cd Lab3TestGithub
 > $ echo "# Lab3TestGithub" >> README.md
@@ -477,7 +478,7 @@ or
 > $ git push -u origin main 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_11.png "3_11")<br>
-8. Reture the web page, reload the webpage. You already sync a file `README.md` from local to Github repo. 
+8. Reture the webpage, reload the webpage. You already sync a file `README.md` from local to Github repo. 
 > Output:<br>
 > ![GITHUB](https://github.com/neolin-ms/CSSOpenTerraformAnsibleGithub/blob/main/GithubImages/3_12.png "3_12")<br>
 
